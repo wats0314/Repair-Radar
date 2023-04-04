@@ -1,3 +1,24 @@
+html, body {
+
+}
+
+body{
+    background-color: rgb(148, 156, 233);
+}
+
+#logo{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;    
+}
+
+#radar{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;  
+}
 
 .container{
     display: grid;
@@ -11,18 +32,24 @@
 
 
 h1{
+    text-align: center;
     margin: auto;
+    color: white;
+    outline: 2px solid white;
+    padding: 5px;
+    margin: 10px;
 }
 
 
 
 .bench{
+    font-size: 70%;
     margin: 1px;
     height: 100px;
     width: 80px;
     min-width: max-content;
     background-color: grey;
-    border: solid black 3px;
+    border: solid rgb(0, 0, 0) 3px;
     text-align: center;
     color: white;
     font-weight: bold;
@@ -30,6 +57,7 @@ h1{
 }
 
 .bench2{
+    font-size: 70%;
     margin: 1px;
     height: 60px;
     width: 130px;
