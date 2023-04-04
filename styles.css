@@ -30,6 +30,17 @@ body{
     margin: 0 auto;
 }
 
+@keyframes pop-spin {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1) rotate(180deg);
+    }
+    100% {
+      transform: scale(1) rotate(360deg);
+    }
+  }
 
 h1{
     text-align: center;
@@ -46,20 +57,20 @@ h1{
     height: 60px;
     width: 130px;
     min-width: max-content;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(214, 12, 12);
     border: solid black 3px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4), -2px -2px 4px rgba(255,255,255,0.4);
+    transition: all 0.2s ease-in-out;
 }
 
-.bench0.pop {
-    transition: all 0.5s ease-out;
-    transform: scale(1.1);
-  }
 
-.bench{
+
+.bench {
     font-size: 70%;
     margin: 1px;
     height: 100px;
@@ -70,8 +81,26 @@ h1{
     text-align: center;
     color: white;
     font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif
-}
+    font-family: Arial, Helvetica, sans-serif;
+    
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4), -2px -2px 4px rgba(255,255,255,0.4);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .bench:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5), -3px -3px 5px rgba(255,255,255,0.5);
+  }
+
+  .bench2:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5), -3px -3px 5px rgba(255,255,255,0.5);
+  }
+
+  .bench0:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5), -3px -3px 5px rgba(255,255,255,0.5);
+  }
 
 .bench2{
     font-size: 70%;
@@ -84,7 +113,10 @@ h1{
     text-align: center;
     color: white;
     font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4), -2px -2px 4px rgba(255,255,255,0.4);
+    transition: all 0.2s ease-in-out;
 }
 
 .bench-head{

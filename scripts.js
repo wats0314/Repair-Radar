@@ -32,15 +32,13 @@ function updateB1Class(blue1) {
     if (blue1 === '0') {
       b1Div.classList.remove('current');
       b1Div.classList.remove('bench2');
-      b1Div.classList.add('bench0', 'pop');
-      setTimeout(() => {
-        b1Div.classList.remove('pop');
-      }, 500);
+      b1Div.classList.add('bench0');
+      b1Div.style.animation = "pop-spin 1.5s forwards";
     } else {
       b1Div.classList.remove('bench0');
       b1Div.classList.add('bench2');
+      b1Div.style.animation = "";
     }
   }
-  
 
 
