@@ -68,6 +68,38 @@ h1{
     transition: all 0.2s ease-in-out;
 }
 
+.bench3{
+    font-size: 8px;
+    margin: 1px;
+    height: 60px;
+    width: 130px;
+    min-width: max-content;
+    background-color: rgb(255, 167, 73);
+    border: solid black 3px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4), -2px -2px 4px rgba(255,255,255,0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+.bench4{
+    font-size: 8px;
+    margin: 1px;
+    height: 60px;
+    width: 130px;
+    min-width: max-content;
+    background-color: rgb(255, 255, 77);
+    border: solid black 3px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4), -2px -2px 4px rgba(255,255,255,0.4);
+    transition: all 0.2s ease-in-out;
+}
+
 @keyframes pop {
     0% {
       transform: scale(1);
@@ -98,18 +130,18 @@ h1{
     transition: all 0.2s ease-in-out;
   }
   
-  .bench:hover {
-    transform: translate(1px, 1px);
+  .bench:hover, .bench4:hover {
+    transform: translate(2px, 2px);
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5), -3px -3px 5px rgba(255,255,255,0.5);
   }
 
   .bench2:hover {
-    transform: translate(1px, 1px);
+    transform: translate(2px, 2px);
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5), -3px -3px 5px rgba(255,255,255,0.5);
   }
 
   .bench0:hover {
-    transform: translate(1px, 1px);
+    transform: translate(2px, 2px);
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5), -3px -3px 5px rgba(255,255,255,0.5);
   }
 

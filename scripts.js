@@ -32,7 +32,6 @@ function updateHTMLClasses(data) {
     { id: 'c6', value: data.values[38][3], item: data.values[38][2] },
     { id: 'c7', value: data.values[39][3], item: data.values[39][2] },
     { id: 'c8', value: data.values[40][3], item: data.values[40][2] }
-    
   ];
 
   // Loop through the array of objects and modify the class of each HTML element based on its value
@@ -42,12 +41,22 @@ function updateHTMLClasses(data) {
     const value = elementData[i].value;
     const itemValue = elementData[i].item;
     if (value === '0') {
-      element.classList.remove('bench2');
+      element.classList.remove('bench2', 'bench3', 'bench4');
       element.classList.add('bench0');
       item.innerHTML = itemValue;
       element.style.animation = 'pop 0.7s ease-in-out forwards, shake 0.7s ease-in-out 0.7s infinite';
-    } else {
-      element.classList.remove('bench0');
+    } else if (value === '1') {
+      element.classList.remove('bench2', 'bench0', 'bench4');
+      element.classList.add('bench3');
+      item.innerHTML = itemValue;
+      element.style.animation = 'pop 0.7s ease-in-out forwards, shake 0.7s ease-in-out 0.7s infinite';
+    }  else if (value === '2') {
+      element.classList.remove('bench2', 'bench0', 'bench3');
+      element.classList.add('bench4');
+      item.innerHTML = itemValue;
+      element.style.animation = 'pop 0.7s ease-in-out forwards, shake 0.7s ease-in-out 0.7s infinite';
+    }else {
+      element.classList.remove('bench0', 'bench3', 'bench4');
       element.classList.add('bench2');
       item.innerHTML = '';
       element.style.animation = '';
