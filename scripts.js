@@ -24,14 +24,14 @@ setInterval(fetchData, 2000); // Fetch data and update HTML every 2 seconds
 function updateHTMLClasses(data) {
   // Define an array of objects, each containing the ID of the HTML element and its corresponding value in the sheet
   const elementData = [
-    { id: 'c1', value: data.values[34][3], item: data.values[34][2] },
-    { id: 'c2', value: data.values[35][3], item: data.values[35][2] },
-    { id: 'c3', value: data.values[36][3], item: data.values[36][2] },
-    { id: 'c4', value: data.values[37][3], item: data.values[37][2] },
-    { id: 'c5', value: data.values[38][3], item: data.values[38][2] },
-    { id: 'c6', value: data.values[39][3], item: data.values[39][2] },
-    { id: 'c7', value: data.values[40][3], item: data.values[40][2] },
-    { id: 'c8', value: data.values[41][3], item: data.values[41][2] }
+    { id: 'c1', value: data.values[33][3], item: data.values[33][2] },
+    { id: 'c2', value: data.values[34][3], item: data.values[34][2] },
+    { id: 'c3', value: data.values[35][3], item: data.values[35][2] },
+    { id: 'c4', value: data.values[36][3], item: data.values[36][2] },
+    { id: 'c5', value: data.values[37][3], item: data.values[37][2] },
+    { id: 'c6', value: data.values[38][3], item: data.values[38][2] },
+    { id: 'c7', value: data.values[39][3], item: data.values[39][2] },
+    { id: 'c8', value: data.values[40][3], item: data.values[40][2] }
     
   ];
 
