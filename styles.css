@@ -56,11 +56,58 @@ h1{
     margin: 1px;
     height: 60px;
     width: 130px;
-    min-width: max-content;
     background-color: rgb(214, 12, 12);
     border: solid black 3px;
     text-align: center;
     color: white;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4), -2px -2px 4px rgba(255,255,255,0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+.bench5{
+    font-size: 8px;
+    margin: 1px;
+    height: 100px;
+    width: 80px;
+    background-color: rgb(214, 12, 12);
+    border: solid black 3px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4), -2px -2px 4px rgba(255,255,255,0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+.bench6{
+    font-size: 8px;
+    margin: 1px;
+    height: 100px;
+    width: 80px;
+    background-color: rgb(214, 150, 12);
+    border: solid black 3px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4), -2px -2px 4px rgba(255,255,255,0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+.bench7{
+    font-size: 8px;
+    margin: 1px;
+    height: 100px;
+    width: 80px;
+    background-color: rgb(235, 250, 22);
+    border: solid black 3px;
+    text-align: center;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-family:Arial, Helvetica, sans-serif;
 
@@ -73,7 +120,6 @@ h1{
     margin: 1px;
     height: 60px;
     width: 130px;
-    min-width: max-content;
     background-color: rgb(255, 167, 73);
     border: solid black 3px;
     text-align: center;
@@ -89,7 +135,6 @@ h1{
     margin: 1px;
     height: 60px;
     width: 130px;
-    min-width: max-content;
     background-color: rgb(255, 255, 77);
     border: solid black 3px;
     text-align: center;
