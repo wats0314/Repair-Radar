@@ -1,10 +1,11 @@
-html, body {
-
-}
 
 body{
-    background-color: rgb(148, 156, 233);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgb(3,0,28);
+    background: linear-gradient(344deg, rgba(3,0,28,1) 0%, rgba(0,15,78,1) 66%, rgba(255,94,0,1) 100%);    
 }
+
 
 #logo{
     display: inline-block;
@@ -52,6 +53,7 @@ h1{
 }
 
 .bench0{
+    border-radius: 5px;
     font-size: 8px;
     margin: 1px;
     height: 60px;
@@ -68,6 +70,7 @@ h1{
 }
 
 .bench5{
+    border-radius: 5px;
     font-size: 8px;
     margin: 1px;
     height: 100px;
@@ -84,6 +87,7 @@ h1{
 }
 
 .bench6{
+    border-radius: 5px;
     font-size: 8px;
     margin: 1px;
     height: 100px;
@@ -100,6 +104,7 @@ h1{
 }
 
 .bench7{
+    border-radius: 5px;
     font-size: 8px;
     margin: 1px;
     height: 100px;
@@ -116,6 +121,7 @@ h1{
 }
 
 .bench3{
+    border-radius: 5px;
     font-size: 8px;
     margin: 1px;
     height: 60px;
@@ -131,6 +137,7 @@ h1{
 }
 
 .bench4{
+    border-radius: 5px;
     font-size: 8px;
     margin: 1px;
     height: 60px;
@@ -150,15 +157,21 @@ h1{
       transform: scale(1);
     }
     50% {
-      transform: scale(1.1);
+      transform: scale(1.4);
     }
     100% {
       transform: scale(1);
     }
   }
 
+.bench2:hover, .bench:hover {
+    scale: 1.05;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5), -4px -4px 5px rgba(0, 0, 0, 0.5);
+}
+
 
 .bench {
+    border-radius: 5px;
     font-size: 8px;
     margin: 1px;
     height: 100px;
@@ -175,22 +188,15 @@ h1{
     transition: all 0.2s ease-in-out;
   }
   
-  .bench:hover, .bench4:hover {
+.bench0:hover, .bench3:hover, .bench4:hover, .bench5:hover, .bench6:hover, .bench7:hover {
+    scale: 1.05;
     transform: translate(2px, 2px);
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.5), -3px -3px 5px rgba(255,255,255,0.5);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5), -4px -4px 5px rgba(0, 0, 0, 0.5);
   }
 
-  .bench2:hover {
-    transform: translate(2px, 2px);
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.5), -3px -3px 5px rgba(255,255,255,0.5);
-  }
-
-  .bench0:hover {
-    transform: translate(2px, 2px);
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.5), -3px -3px 5px rgba(255,255,255,0.5);
-  }
 
 .bench2{
+    border-radius: 5px;
     font-size: 8px;
     margin: 1px;
     height: 60px;
