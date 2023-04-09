@@ -201,4 +201,41 @@ function addStopwatchToBench0() {
   });
 }
 
+
 setInterval(addStopwatchToBench0, 1000);
+
+function addStopwatchToBench5() {
+  const stopwatchDivs = document.querySelectorAll('.stopwatch2');
+  stopwatchDivs.forEach((stopwatchDiv) => {
+    const parentDiv = stopwatchDiv.parentNode;
+    if (parentDiv.className !== 'bench5' && Refreshing !== 'yes') {
+      clearInterval(stopwatchDiv.dataset.intervalId);
+      parentDiv.removeChild(stopwatchDiv);
+    }
+  });
+
+  const bench5Divs = document.querySelectorAll('.bench5');
+  bench5Divs.forEach((parentDiv) => {
+    const parentDivId = parentDiv.getAttribute('id');
+    const stopwatchDiv = parentDiv.querySelector(`#${parentDivId}-timer`);
+    if (!stopwatchDiv) {
+      const newStopwatchDiv = document.createElement('div');
+      newStopwatchDiv.setAttribute('id', `${parentDivId}-timer`);
+      newStopwatchDiv.setAttribute('class', 'stopwatch2');
+      parentDiv.appendChild(newStopwatchDiv);
+      let startTime = null;
+      let elapsedTime = 0;
+      const stopwatchInterval = setInterval(() => {
+        if (startTime === null) {
+          startTime = Date.now();
+        } else {
+          elapsedTime = Date.now() - startTime;
+          newStopwatchDiv.textContent = (elapsedTime / 1000).toFixed(0) + 's';
+        }
+      }, 10);
+      newStopwatchDiv.dataset.intervalId = stopwatchInterval;
+    }
+  });
+}
+
+setInterval(addStopwatchToBench5, 1000);
