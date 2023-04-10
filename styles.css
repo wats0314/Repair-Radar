@@ -264,7 +264,7 @@ body{
     }
   }
 
-.bench2:hover, .bench:hover, #R2QA-total {
+.bench2:hover, .bench:hover, #R2QA-total:hover {
     scale: 1.05;
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5), -4px -4px 5px rgba(0, 0, 0, 0.5);
 }

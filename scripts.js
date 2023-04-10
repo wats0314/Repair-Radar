@@ -133,8 +133,6 @@ function updateHTMLClassesVertical(data) {
     const eValue = elementData[i].eValue;
 
     // Get the corresponding value from column E
-    const columnEValue = data.values[i][4];
-
     if (value === '0') {
       element.className = '';
       element.classList.add('bench5');
