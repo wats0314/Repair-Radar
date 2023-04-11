@@ -249,7 +249,7 @@ body{
     height: 100px;
     width: 80px;
     background-color: rgb(235, 250, 22);
-    border: solid black 3px;
+    border: solid rgb(255, 255, 255) 2px;
     text-align: center;
     color: rgb(0, 0, 0);
     font-family:Arial, Helvetica, sans-serif;
@@ -265,7 +265,7 @@ body{
     height: 60px;
     width: 130px;
     background-color: rgb(255, 167, 73);
-    border: solid black 3px;
+    border: solid rgb(255, 255, 255) 2px;
     text-align: center;
     color: rgb(0, 0, 0);
     font-family:Arial, Helvetica, sans-serif;
@@ -281,7 +281,7 @@ body{
     height: 60px;
     width: 130px;
     background-color: rgb(255, 255, 77);
-    border: solid black 3px;
+    border: solid rgb(255, 255, 255) 2px;
     text-align: center;
     color: rgb(0, 0, 0);
     font-family:Arial, Helvetica, sans-serif;
@@ -316,7 +316,7 @@ body{
     width: 80px;
     min-width: max-content;
     background-color: grey;
-    border: solid rgb(255, 255, 255) 3px;
+    border: solid rgb(255, 255, 255) 2px;
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -332,7 +332,7 @@ body{
   }
 
 
-.bench2{
+.bench2 {
     border-radius: 5px;
     font-size: 8px;
     margin: 1px;
@@ -340,7 +340,7 @@ body{
     width: 130px;
     min-width: max-content;
     background-color: grey;
-    border: solid rgb(255, 255, 255) 3px;
+    border: solid rgb(255, 255, 255) 2px;
     text-align: center;
     color: rgb(255, 255, 255)
     font-family:Arial, Helvetica, sans-serif;
